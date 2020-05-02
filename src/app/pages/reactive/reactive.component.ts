@@ -12,6 +12,7 @@ export class ReactiveComponent implements OnInit {
 
   constructor( private fb: FormBuilder ) {
     this.crearFormulario();
+    this.cargarDataAlFormulario();
   }
 
   ngOnInit(): void {
@@ -45,6 +46,21 @@ export class ReactiveComponent implements OnInit {
     });
   }
 
+  cargarDataAlFormulario(){
+    //this.forma.setValue(
+    this.forma.reset(
+      {
+        nombre: 'Juanito',
+        apellido: 'Illán',
+        correo: 'jose@jose.com',
+        direccion: {
+          distrito: 'FSDFSDF',
+          ciudad: 'sdfsdfsdf'
+        }
+      }
+    )
+  }
+
   guardar() {
     console.log( this.forma );
     if ( this.forma.invalid ) {
@@ -57,6 +73,13 @@ export class ReactiveComponent implements OnInit {
         control.markAsTouched();
       });
     }
+
+    // Posteo de información
+    this.forma.reset({
+      nombre: 'Valor por defecto'
+    });
+
+
   }
 
 }
