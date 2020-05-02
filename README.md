@@ -1,6 +1,8 @@
-![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png) ![alt text](https://cdn.periscopix.co.uk/blog/_800xAUTO_crop_center-center_80/Firebase-Logo.png)
+![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png) ![alt text](https://cdn.iconscout.com/icon/free/png-256/firebase-1-282796.png)
+
 # Formularios
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
+Using Firebase
 
 ![](formularios-demo.gif)
 
